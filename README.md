@@ -29,6 +29,18 @@
 - ✅ **Proteção contra XSS**
 
 
+🛠️ **Como Usar este Código:**
+- **Requisitos:**
+- XAMPP (Apache + MySQL + PHP)
+- Navegador moderno
+
+⚙️ **Instalação:**
+1. Clone o repositório
+2. Importe database.sql no phpMyAdmin
+3. Configure config.php com suas credenciais
+4. Acesse via http://localhost/pizzaria
+
+
 📁 **Estrutura do Projeto:**
 
 ```text
@@ -39,16 +51,3 @@ pizzaria/
 ├── Perfil do usuário
 ├── Design system consistente
 └── Banco de dados MySQL
-
-📝 **Como Usar este Código**
-**Requisitos:**
-- XAMPP (Apache + MySQL + PHP)
-- Navegador moderno
-
-**Instalação:**
-1. Clone o repositório
-2. Importe database.sql no phpMyAdmin
-3. Configure config.php com suas credenciais
-4. Acesse via http://localhost/pizzaria
-
-Desenvolvido por: **Nayara Karla Medeiros da Silva**
