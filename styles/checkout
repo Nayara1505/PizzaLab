@@ -1,0 +1,348 @@
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.checkout-content {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.checkout-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.checkout-header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pedido-count {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.form-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-group h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #e1e5e9;
+    margin: 2rem 0;
+}
+
+.resumo-section {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.resumo-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #e1e5e9;
+}
+
+.resumo-card h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.produtos-resumo {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.produto-resumo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.produto-resumo:last-child {
+    border-bottom: none;
+}
+
+.produto-info h4 {
+    margin: 0 0 0.25rem 0;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.quantidade {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.preco {
+    font-weight: 600;
+    color: #2c5530;
+    white-space: nowrap;
+}
+
+/* Totais */
+.resumo-totais {
+    margin: 1.5rem 0;
+}
+
+.total-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.total-final {
+    border-top: 2px solid #e1e5e9;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.btn-confirmar-pedido {
+    width: 100%;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.btn-confirmar-pedido:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-voltar-carrinho {
+    display: block;
+    text-align: center;
+    color: #667eea;
+    text-decoration: none;
+    padding: 0.75rem;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-voltar-carrinho:hover {
+    background: #667eea;
+    color: white;
+}
+
+.metodo-pagamento-simples {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.metodo-option {
+    margin-bottom: 0.5rem;
+}
+
+.metodo-simples-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.radio-hidden:checked + .metodo-simples-label .checkmark {
+    background: #667eea;
+    border-color: #667eea;
+}
+
+.radio-hidden:checked + .metodo-simples-label .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.metodo-simples-titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.metodo-simples-descricao {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0.5rem 0 0 0;
+    padding-left: 28px;
+}
+
+.bandeiras-simples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    padding-left: 28px;
+}
+
+.bandeira-simples {
+    background: #f8f9fa;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #555;
+    border: 1px solid #e1e5e9;
+}
+
+.metodo-simples-label:hover .checkmark {
+    border-color: #667eea;
+}
+
+.metodo-pagamento-simples:hover {
+    border-color: #667eea;
+    background: #f8f9ff;
+}
+
+.metodo-pagamento-simples.selected {
+    background: #f0f4ff;
+    border-color: #667eea;
+}
+
+@media (max-width: 768px) {
+    .metodo-pagamento-simples {
+        padding: 0.75rem;
+    }
+    
+    .metodo-simples-descricao {
+        padding-left: 0;
+        margin-left: 28px;
+    }
+    
+    .bandeiras-simples {
+        padding-left: 0;
+        margin-left: 28px;
+        justify-content: flex-start;
+    }
+    
+    .bandeira-simples {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .form-section {
+        padding: 1rem;
+    }
+    
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .resumo-section {
+        position: static;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.checkout-content {
+    animation: fadeIn 0.6s ease;
+}
