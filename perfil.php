@@ -9,7 +9,6 @@ if(!isset($_SESSION['usuario_id'])){
 
 $id = $_SESSION['usuario_id'];
 
-// CORREÇÃO: Usar Prepared Statement
 $sql = "SELECT * FROM usuarios WHERE id = ?";
 $stmt = $conexao->prepare($sql);
 $stmt->bind_param("i", $id);
@@ -18,7 +17,6 @@ $result = $stmt->get_result();
 $usuario = $result->fetch_assoc();
 $stmt->close();
 
-// Verificar se usuário foi encontrado
 if(!$usuario) {
     header("Location: login.php");
     exit;
@@ -95,4 +93,5 @@ if(!$usuario) {
         </div>
     </main>
 </body>
+
 </html>
